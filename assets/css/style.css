@@ -1,135 +1,173 @@
 html {
-    position: relative;
-    min-height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
 #container {
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
-    height: 1050px;
-    width: 960px;  
-    margin: auto;
-    margin-top: 2%;
-    margin-bottom: 75px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  height: 500px;
+  width: 960px;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 75px;
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #777777
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777777;
 }
 
 #headerBorder {
-    border-bottom: 3px solid #cccccc;
+  border-bottom: 3px solid #cccccc;
+  width: 100%;
 }
 
 header {
-    background: #ffffff;
-    height: 87px;
+  background: #ffffff;
+  height: 87px;
 }
 
 #nameWrap {
-    margin-left: 20%;
-    float: left;
-    width: 480px;
+  margin-left: 20%;
+  float: left;
+  /* width: 480px; */
 }
 
 #headerTextWrap {
-    float: left;
-    width: 250px;
-    margin-left: 10%;
+  float: left;
+  width: 250px;
+  margin-left: 10%;
 }
 
 .name {
-    /* position: relative; */
-    background: #4aaaa5;
-    width: 250px;
-    height: 62px;
-    text-align: center;
-    font-size: 30px;
-    padding-top: 25px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
+  /* position: relative; */
+  background: #4aaaa5;
+  width: 250px;
+  height: 62px;
+  text-align: center;
+  font-size: 30px;
+  /* padding-top: 25px; */
+  padding-top: 10%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
 }
 
 .headerText {
-    float: right;
-    padding-top: 35px;
-    font-size: 18px;
-    margin-right: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  float: right;
+  padding-top: 35px;
+  font-size: 18px;
+  margin-right: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 h2 {
-    text-align: left;
-    font-size: 32px;
-    padding: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #4aaaa5;
+  text-align: left;
+  font-size: 32px;
+  padding: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4aaaa5;
 }
 
 a {
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .index {
-    font-size: 16px;
-    line-height: 24px;
-    margin-left: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-right: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 10px;
 }
 
 .footerText {
-    color: #777777;
+  color: #777777;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    background: #666666;
-    height: 56px;
-    width: 100%;
-    text-align: center;
-    border-top: 8px solid #4aaaa5;
+  position: absolute;
+  bottom: 0;
+  background: #666666;
+  height: 56px;
+  width: 100%;
+  text-align: center;
+  border-top: 8px solid #4aaaa5;
 }
 
 .imageWrap {
-    float: left;
-    margin: auto;
-    padding: 20px;
+  float: left;
+  margin: auto;
+  padding: 20px;
 }
 
 .image {
-    height: 250px;
-    width: 300px;
+  height: 250px;
+  width: 300px;
 }
 
 h3 {
-    background: #4aaaa5;
-    position: relative;
-    bottom: 70px;
-    text-align: center;
-    height: 35px;
-    padding-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white
+  background: #4aaaa5;
+  position: relative;
+  bottom: 70px;
+  text-align: center;
+  height: 35px;
+  padding-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 
-input, textarea {
-    margin: 10px;
-    width: 60%;
+input,
+textarea {
+  margin: 10px;
+  width: 60%;
 }
 
 button {
-    border: none;
-    margin-left: 10px;
-    background: #4aaaa5;
-    color: white;
-    height: 30px;
-    width: 70px;
+  border: none;
+  margin-left: 10px;
+  background: #4aaaa5;
+  color: white;
+  height: 30px;
+  width: 70px;
 }
 
 body {
-    background-image: url("../images/houndstooth-pattern/houndstooth-pattern.png")
+  background-image: url("../images/houndstooth-pattern/houndstooth-pattern.png");
+}
+
+@media screen and (max-width: 980px) {
+  body {
+    width: 100%;
+  }
+  #headerBorder {
+    width: 100%;
+  }
+  #nameWrap {
+    width: 30%;
+  }
+  #headerTextWrap {
+    width: 30%;
+    margin-left: 0;
+  }
+  #container {
+    width: 600px;
+    font-size: 150%;
+    height: 820px;
+    width: 70%;
+  }
+  .index {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .image {
+    /* padding: 20px; */
+    height: 200px;
+    width: 300px;
+  }
+  .imageWrap {
+    padding-bottom: 0;
+    height: 200px;
+  }
 }
